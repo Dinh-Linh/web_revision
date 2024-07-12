@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
+#header {
+    display: flex;
+    height: 60px;
+    box-shadow: 2px 2px 1px #ccaeae;
+    padding: 8px 20px;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+}
+
+.text1 {
+    display: flex;
+}
+
+.logo:hover {
+    background-color: antiquewhite;
+}
+
+.a1,
+b,
+p {
+    font-size: 20px;
+    padding: 8px 20px;
+}
+
+.a1:hover {
+    background-color: antiquewhite;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+}
+.banner {
+    position: relative;
+}
+
+.banner > .pinwheel {
+    position: fixed;
+    left: 20px;
+    top: 10%;
+}
+.banner > img {
+    position: relative;
+    margin-top: 60px;
+    left: 10%;
+    width: 1500px;
+    height: 600px;
+    margin: auto;
+}
+
+.banner p {
+    position: absolute;
+    right: 20%;
+    top: 48%;
+    z-index: 100;
+    background-color: #f2ac4a;
+    border-radius: 20px;
+    padding: 16px 32px;
+    font-style: italic;
+    color: rgb(14, 57, 112);
+    font-weight: 800;
+    animation: moveHorizontally 3s ease-in-out infinite;
+}
+
+.pr {
+    position: relative;
+    display: inline-block;
+}
+
+.project {
+    width: 1500px;
+    margin: auto;
+}
+.pr {
+    width: 650px;
+    height: 400px;
+    margin-bottom: 8px;
+    margin-right: 20px;
+}
+
+.listActivity {
+    display: flex;
+    justify-content: space-between;
+}
+.pr > .textReview {
+    padding: 4px 6px;
+    background-color: rgb(61, 210, 42);
+    color: white;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.pr > .anh > img {
+    width: 100%;
+    height: 350px;
+}
+
+.project > p {
+    color: rgb(226, 168, 59);
+    font-size: 32px;
+    font-style: italic;
+    padding: 8px 12px;
+}
+
+.pinwheel {
+    width: 100px;
+    height: 100px;
+    background: conic-gradient(
+        from 45deg,
+        red,
+        red 25%,
+        yellow 25%,
+        yellow 50%,
+        green 50%,
+        green 75%,
+        blue 75%,
+        blue
+    );
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+footer {
+    background-color: orange;
+    font-size: 20px;
+    padding: 20px 12px;
+    display: flex;
+    justify-content: center;
+}
+footer > p {
+    color: rgb(14, 57, 112);
+    font-weight: 800;
+    font-style: italic;
+}
+
+@keyframes moveHorizontally {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(150px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(
+        -45deg,
+        rgb(53, 163, 66),
+        rgb(48, 124, 118)
+    );
+    height: 100vh;
+    color: white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    position: relative;
+    top: 20px;
+    left: 100px;
+}
+
+.Anh1 img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+    left: 25%;
+}
+
+.Anh2 img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+    left: 52%;
+    top: 66%;
+}
+
+.main {
+    height: 600px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: rgba(248, 237, 237, 0.5);
+    position: absolute;
+    left: 36%;
+    top: 18%;
+    z-index: 10;
+    box-shadow: 0 0 15px rgb(47, 45, 45);
+}
+
+.text1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(248, 237, 237, 0.5);
+    box-shadow: 0 0 15px rgb(12, 101, 11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+.text1 img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.main ul {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40%;
+    line-height: 30px;
+}
+
+.Mxh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    top: 43%;
+}
+
+.text4 {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(248, 237, 237, 0.5);
+    box-shadow: 0 0 15px rgb(9, 68, 45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.text4 .logo {
+    z-index: 12;
+}
+
+.last {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    gap: 30px;
+    align-items: center;
+}
+
+.Nen {
+    width: 120px;
+    height: 50px;
+    background-color: rgba(248, 237, 237, 0.5);
+    box-shadow: 0 0 15px rgb(5, 108, 34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Nen > div > ul {
+    color: black;
+    letter-spacing: 1px;
+}
+.text {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 60%;
+    word-spacing: 2px;
+    font-size: 18px;
+}
